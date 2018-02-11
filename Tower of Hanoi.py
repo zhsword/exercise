@@ -8,4 +8,4 @@ def move(n, a, b, c):
     move(n-1, b, a, c) #将b的n-1个盘子从b移动到c
    
 n = int(input('请输入汉诺塔的层数：'))
-move (n, 'X', 'Y', 'Z')
+move (n, 'A', 'B', 'C')
