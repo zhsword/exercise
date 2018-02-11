@@ -7,5 +7,5 @@ def move(n, a, b, c):
     print (a, '-->', c) #将a最下面的圆盘移动到c
     move(n-1, b, a, c) #将b的n-1个盘子从b移动到c
    
-n = int(input（'请输入汉诺塔的层数：'）)
+n = int(input('请输入汉诺塔的层数：'))
 move (n, 'X', 'Y', 'Z')
