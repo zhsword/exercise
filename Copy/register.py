@@ -1,4 +1,4 @@
-contracts = dict((('小萌萌',123),('张好人',222)))
+contracts = dict((('张坏人',123),('张好人',222)))
 
 def new_user():
     a = '请输入用户名：'
