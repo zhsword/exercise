@@ -1,5 +1,5 @@
 import os
-all_files = os.listdir(os.curdir)    #os.listdir() 返回path指定的文件夹包含的文件或文件夹的名字的列表。 os.curdir() 返回当前目录。 os.getcwd() 返回当前工作目录
+all_files = os.listdir(os.curdir)    #os.listdir() 返回指定的文件夹包含的文件或文件夹的名字的列表。 os.curdir() 返回当前目录。 os.getcwd() 返回当前工作目录
 type_dict = dict()
 
 for each_file in all_files:
