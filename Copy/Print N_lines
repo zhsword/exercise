@@ -32,7 +32,6 @@ while True:
     else:
         file_lines = input('您输入的内容有误，请重新输入：')
 
-
 (begin, end) = file_lines.split(':')
 
 if int(begin) <= 1:
