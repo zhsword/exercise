@@ -7,8 +7,8 @@ def file_write(file_name):
 		if write_content != ':c':
 			f.write('%s\n' % write_content)
 		else:
-			break
-			
+			break			
 	f.close()
+	
 file_name = input('请输入文件名：')
 file_write(file_name)
