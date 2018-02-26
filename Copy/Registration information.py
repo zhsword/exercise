@@ -19,3 +19,26 @@ while 1:
     fieldValues = g.multenterbox(errmsg, title, fieldNames, fieldValues)
 
 print("用户资料如下：%s" % str(fieldValues))
+
+
+#糙版
+import easygui as g
+
+msg = '请输入账号信息(*是必填项)'
+title = '账号中心'
+field = ['*用户名', '*邮箱', ' 手机号']
+values = g.multenterbox(msg, title, field)
+
+
+while True:
+    ermsg = ''
+    for i in range(len(field)):
+        if field[i].strip()[0] == '*' and values[i] == '':
+            ermsg += ('【%s】必须填\n\n' %field[i])
+    if ermsg == '':
+        break
+    
+    values = g.multenterbox(ermsg, title, field, values)
+
+print(str(values))
+print(ermsg)
